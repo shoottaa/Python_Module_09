@@ -30,7 +30,7 @@ def main() -> None:
     )
     print(f"ID: {station.station_id}")
     print(f"Name: {station.name}")
-    print(f"Crew Size: {station.crew_size} people")
+    print(f"Crew: {station.crew_size} people")
     print(f"Power: {station.power_level}%")
     print(f"Oxygen: {station.oxygen_level}%")
     status = "Operational" if station.is_operational else "Non-operational"
