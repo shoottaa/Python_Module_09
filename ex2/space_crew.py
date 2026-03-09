@@ -141,7 +141,7 @@ def main() -> None:
     except ValidationError as e:
         print("Expected validation error:")
         msg = e.errors()[0]["msg"]
-        print(msg.split(", ", 1)[1])
+        print(msg.replace("Value error, ", ""))
 
 
 if __name__ == "__main__":
